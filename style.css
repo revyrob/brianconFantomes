@@ -1,0 +1,35 @@
+body {
+    font-family: 'Kelly Slab', cursive;
+    font-size: 1.5em;
+    line-height: 2em;
+    background-color: black;
+    color: rgb(241, 4, 4);
+}
+.nav-item {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+#mainNavbar {
+    padding-left: 25px;
+    font-size: .75em;
+    font-weight:400;
+    font-family: 'Fredericka the Great', cursive;
+}
+.container {
+    padding-top: 100px;
+}
+#intro img {
+    height: 600px;
+    justify-self: center;
+}
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3em;
+    color: white;
+}
+#logo-intro {
+    display:inline-flexbox;
+}
+#logo-navbar {
+    height: 100px;
+}
