@@ -7,7 +7,7 @@ express()
     .set('views', path.join(__dirname, 'views'))
     .set('view engine', 'js')
     .get('index.html', (req, res) => res.render('/home'))
-    .get('map.html', (req, res) => res.render('/data'))
+    .get('map.html', (req, res) => res.render('/route'))
 
 
     .listen(PORT, () => console.log(`Listening on ${PORT}`))

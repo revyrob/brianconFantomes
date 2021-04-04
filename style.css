@@ -78,5 +78,23 @@ footer {
 .routePhotos {
     height: 150px;
 }
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-white {
+    box-shadow: 1px 1px 10px #f1f0f080;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 300px;
+    text-align: center;
+}
+.card-white img{
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
 
 
