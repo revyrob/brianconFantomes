@@ -1,19 +1,20 @@
 body {
-    font-family: 'Kelly Slab', cursive;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
     line-height: 2em;
-    background-color: black;
-    color: rgb(241, 4, 4);
+    background-color: #161A1D;
+    color: white;
 }
 .nav-item {
     padding-right: 25px;
     padding-left: 25px;
 }
 #mainNavbar {
-    padding-left: 25px;
-    font-size: .75em;
-    font-weight:400;
-    font-family: 'Fredericka the Great', cursive;
+    padding-left: 10px;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    background-color: #494949;
 }
 .container {
     padding-top: 100px;
@@ -23,13 +24,59 @@ body {
     justify-self: center;
 }
 h1 {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Creepster', cursive;
     font-size: 3em;
-    color: white;
+    color: #E5383B;
+}
+h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 1.75em;
+    color: #B1A7A6;
 }
 #logo-intro {
     display:inline-flexbox;
 }
 #logo-navbar {
-    height: 100px;
+    height: 70px;
+    padding: 5px;
 }
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover {
+    color: #E5383B;
+}
+footer a:hover {
+    color: #161A1D;
+}
+footer {
+    background-color: #BA181B;
+    color: #F5F3F4;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media (max-width: 425px) {
+    #route {
+    padding-top: 75px;
+}}
+#social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 75px;
+}
+#social img {
+    height: 75px;
+}
+.map {
+    display: flex;
+    justify-content: center;
+}
+.routePhotos {
+    height: 150px;
+}
+
+
