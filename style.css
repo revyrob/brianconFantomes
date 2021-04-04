@@ -96,5 +96,8 @@ footer {
     height: 180px;
     object-fit: contain;
 }
+.spaceHeader {
+    padding-top: 50px;
+}
 
 

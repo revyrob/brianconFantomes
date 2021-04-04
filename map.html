@@ -15,7 +15,6 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap" rel="stylesheet">
-    rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -50,7 +49,7 @@
         </div>
     </nav>
 
-    <section class="">
+    <section class="spaceHeader">
         <div class="container">
             <h2>LA ROUTE</h2>
             <p>Below you will find the route to the Audio Theatre Experience.</p>
@@ -107,6 +106,7 @@
                 <h3>Chapter 9 <img src="photos/gargouille.jpg" alt="chpt1" class="routePhotos"></h3>
             </div>
         </div>
+        <br>
     </section>
 
     <footer>
@@ -130,7 +130,7 @@
     <script src="data/route_2.js"></script>
     <script>
         // L Map editted
-        var map = L.map('map', { zoomControl: true, maxZoom: 28, minZoom: 1 }).setView([44.9, 6.65], 13);
+        var map = L.map('map', { zoomControl: true, maxZoom: 28, minZoom: 1 }).setView([44.89940, 6.64487], 17);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({ truncate: { length: 30, location: 'smart' } });
