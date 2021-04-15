@@ -43,6 +43,10 @@ h2 {
     height: 70px;
     padding: 5px;
 }
+@media (max-width: 425px) {
+    #logo-navbar {
+        height: 50px;
+}}
 a {
     text-decoration: none;
     color: whitesmoke;
