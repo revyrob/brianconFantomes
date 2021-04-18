@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,14 +8,14 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Briançon Fantômes</title>
 </head>
 
 <body>
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-lg py-0 fixed-top">
-        <a href="index.html" class="navbar-brand">
-            <img src="new.logoé.png" alt="" id="logo-navbar">
+        <a href="../pages/index.html" class="navbar-brand">
+            <img src="../logo/new.logoé.png" alt="" id="logo-navbar">
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" type="button">
             <span class="navbar-toggler-icon"></span>
@@ -23,16 +23,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navLinks">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">ACCUEIL</a>
+                    <a href="../pages/index.html" class="nav-link">HOME</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="map.html" class="nav-link">AUDIO</a>
+                </li> -->
+                <li class="nav-flag">
+                    <a href="../pages/accueil.html" class="nav-link"><img src="../photos/frenchFlag.jpg" id="flag"></a>
                 </li>
                 <li class="nav-flag">
-                    <a href="accueil.html" class="nav-link"><img src="photos/frenchFlag.jpg" id="flag"></a>
-                </li>
-                <li class="nav-flag">
-                    <a href="index.html" class="nav-link"><img src="photos/englishFlag.jpg" id="flag"></a>
+                    <a href="../pages/index.html" class="nav-link"><img src="../photos/englishFlag.jpg" id="flag"></a>
                 </li>
             </ul>
         </div>
@@ -41,17 +41,18 @@
 
     <section class="container-fluid px-0">
         <div class="row align-items-center">
-            <div class="col-lg-4 col-md-6">
-                <img src="photos/church.jpg" alt="church" class="img-fluid">
+            <div class="col-lg-4 col-md-6 btnContainer">
+                <img src="../photos/church.jpg" alt="church" class="img-fluid">
+                <a href="../pages/audioAng.html" alt="purchase">PURCHASE</a>
             </div>
             <div class="col-lg-4 col-md-6 d-none d-md-block">
                 <div class="row justify-content-center">
-                    <img src="photos/gargouille.jpg" alt="gargouille" class="img-fluid">
+                    <img src="../photos/gargouille.jpg" alt="gargouille" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-4 d-none d-lg-block">
                 <div class="row justify-content-center">
-                    <img src="photos/oldtown2.jpg" alt="snowy streets" class="img-fluid">
+                    <img src="../photos/oldtown2.jpg" alt="snowy streets" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -62,22 +63,19 @@
     </section>
 
     <section class="container">
-        <h2>L'AUDIO SPECTACLE EXPERIENCE</h2>
+        <h2>AUDIO THEATRE EXPERIENCE</h2>
         <!-- <img src="logo.design.png" alt="logo" id="logo-intro"> -->
         <p>
-            Laissez-nous vous emmener à travers les petites rues et passages pour découvrir ce qui se cache à
-            l'intérieur. En achetant ceci
-            aventure, vous acceptez ce qui suit: si vous vous blessez, vous évanouissez, perdez
-            vos fausses dents, contractez la peste, vos cheveux deviennent blancs de peur ou de tout ce qui pourrait
-            nuire à votre
-            santé - sera de votre faute. L'expérience du théâtre audio n'est pas recommandée pour les jeunes enfants.
+            Join us in an exciting way to discover the history and legends of Briançon. Briançon Fantômes is an audio
+            theatre experience where you walk around the old town of Briançon and are entertained with stories relating
+            to the old town. All you need is your smartphone and a pair of headphones. The audio experience and
+            walk takes between
+            60-90 minutes to complete and we recommend to do it in the late afternoon or evening.
             <br>
-            Rejoignez-nous de manière passionnante pour découvrir l'histoire et les légendes de Briançon. Briançon
-            Fantômes est un audio
-            expérience théâtrale et tout ce dont vous avez besoin est votre smartphone et une paire d'écouteurs.
-            L'expérience audio et
-            la marche prend entre
-            60-90 minutes pour terminer et nous vous recommandons de le faire en fin d'après-midi ou en soirée.
+            Let us take you through the small streets and passages to discover what is hidden inside. By purchasing this
+            adventure, you agree to the following: if you injure yourself, pass out, lose
+            your false teeth, contract the plague, your hair turns white with dread or anything that could harm your
+            health - will be your fault. The audio theatre experience is not recommend for small children.
         </p>
     </section>
 
@@ -85,49 +83,53 @@
         <div class="row align-items-left">
             <div class="col-sm-6" id="cost">
                 <div class="row justify-content-center">
-                    <h2>PRIX</h2>
+                    <h2>COST</h2>
                     <p>
-                        En appuyant sur <a href=""> AUDIO </a>, vous serez redirigé vers Paypal et pourrez acheter
-                        l'audio pour
-                        3 €.
-                        Une fois l'achat confirmé, un e-mail vous sera envoyé avec une URL où vous
-                        peut obtenir le
-                        audio en anglais et la carte d'itinéraire. Vous serez
-                        avoir accès à l'URL audio pendant 24 heures à compter de votre achat.
+                        By pressing <a href="../pages/audioAng.html">PURCHASE</a> you will be redirected to Paypal and
+                        can
+                        purchase the audio
+                        for €3.
+                        After the purchase has been confirmed an email will be sent to you along with a URL where you
+                        can obtain the
+                        audio in English and the route map. You will
+                        have access to the URL for 24hrs from your purchase.
                     </p>
                 </div>
             </div>
             <div class="col-sm-6" id="route">
                 <div class="row justify-content-center">
-                    <h2>CONDITIONS D'ACHAT</h2>
+                    <h2>TERMS OF PURCHASE</h2>
                     <p>
-                        En achetant cette expérience de cinéma audio, vous acceptez de ne pas partager
-                        cette propriété intellectuelle. Tous les achats sont définitifs.
+                        By purchasing this audio theatre experience you agree not to share
+                        this intellectual property. All purchases are final.
                     </p>
                 </div>
             </div>
         </div>
+        <div class="btnContainer" id="extraBtn">
+            <a href="../pages/audioAng.html" alt="purchase">PURCHASE</a>
+        </div>
     </section>
 
     <section class="container" id="contact">
-        <h2>CONTACTE</h2>
+        <h2>CONTACT</h2>
         <a href="mailto:brianconfantomes@gmail.com">brianconfantomes@gmail.com</a>
     </section>
 
     <section class="container" id="social">
         <!-- <h2>SOCIAL MEDIA</h2> -->
         <a href="https://www.tripadvisor.com/Attraction_Review-g219218-d21176245-Reviews-Les_Fantomes_de_Briancon-Briancon_Hautes_Alpes_Provence_Alpes_Cote_d_Azur.html"
-            target="_blank"><img src="photos/tripadvisor.png" alt="tripadvisor"></a>
+            target="_blank"><img src="../photos/tripadvisor.png" alt="tripadvisor"></a>
 
         <!-- <img src="photos/facebook.png" alt="facebook" href=""> -->
     </section>
 
     <footer>
-        <a href="index.html"></span>Accueil</a>
+        <a href="../pages/index.html"></span>Home</a>
         <!-- <a href="map.html"></span>Map</a> -->
-        <a href="mailto:kayle.robson@gmail.com"></span>Contacte</a>
-        <a href="https://revyrob.github.io/kaylerobson/" target="_blank"></span>à Propos</a>
-        <a href="">© 2021 Briançon Fantômes</span></a>
+        <a href="mailto:kayle.robson@gmail.com"></span>Contact</a>
+        <a href="https://revyrob.github.io/kaylerobson/" target="_blank"></span>About</a>
+        <a href="">© 2021 Kayle Robson</span></a>
     </footer>
 
     <!--jQuery first, then Popper.js, then Bootstrap JS-->

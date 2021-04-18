@@ -6,8 +6,9 @@ express()
     .use(express.static(path.join(__dirname, 'public')))
     .set('views', path.join(__dirname, 'views'))
     .set('view engine', 'js')
-    .get('index.html', (req, res) => res.render('/home'))
-    .get('map.html', (req, res) => res.render('/route'))
+    .get('../pages/index.html', (req, res) => res.render('/home'))
+    .get('../pages/audioAng.html', (req, res) => res.render('/audioAng'))
+    .get('../pages/audioFra.html', (req, res) => res.render('/audioFr'))
 
 
     .listen(PORT, () => console.log(`Listening on ${PORT}`))

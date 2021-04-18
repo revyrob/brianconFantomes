@@ -7,15 +7,15 @@
     <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="css/leaflet.css">
-    <link rel="stylesheet" href="css/qgis2web.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../css/leaflet.css">
+    <link rel="stylesheet" href="../css/qgis2web.css">
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
     <!-- <style>
         #map {
@@ -28,8 +28,8 @@
 
 <body>
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-        <a href="index.html" class="navbar-brand">
-            <img src="new.logoé.png" alt="" id="logo-navbar">
+        <a href="../pages/index.html" class="navbar-brand">
+            <img src="../logo/new.logoé.png" alt="" id="logo-navbar">
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" type="button">
             <span class="navbar-toggler-icon"></span>
@@ -37,11 +37,11 @@
         <div class="collapse navbar-collapse justify-content-end" id="navLinks">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">HOME</a>
+                    <a href="../pages/index.html" class="nav-link">HOME</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="map.html" class="nav-link">AUDIO</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </nav>
@@ -66,7 +66,7 @@
         <div class="card-container">
             <div class="card-white">
                 <h3>Chapter 1</h3>
-                <img src="routePhotos/stop1.jpg" alt="chpt1" class="routePhotos">
+                <img src="../routePhotos/stop1.jpg" alt="chpt1" class="routePhotos">
                 <audio controls>
                     <!-- source and the type is what type of audio it is saved in -->
                     <source src="" type="audio/mpeg">
@@ -75,7 +75,7 @@
 
             <div class="card-white">
                 <h3>Chapter 2</h3>
-                <img src="routePhotos/stop2.jpg" alt="chpt2" class="routePhotos">
+                <img src="../routePhotos/stop2.jpg" alt="chpt2" class="routePhotos">
                 <audio controls>
                     <source src="" type="audio/mpeg">
                 </audio>
@@ -84,7 +84,7 @@
 
             <div class="card-white">
                 <h3>Chapter 3</h3>
-                <img src="routePhotos/stop3.jpg" alt="chpt3" class="routePhotos">
+                <img src="../routePhotos/stop3.jpg" alt="chpt3" class="routePhotos">
                 <audio controls>
                     <source src="" type="audio/mpeg">
                 </audio>
@@ -93,7 +93,7 @@
 
             <div class="card-white">
                 <h3>Chapter 4</h3>
-                <img src="routePhotos/stop4.jpg" alt="chpt4" class="routePhotos">
+                <img src="../routePhotos/stop4.jpg" alt="chpt4" class="routePhotos">
                 <audio controls>
                     <source src="" type="audio/mpeg">
                 </audio>
@@ -102,7 +102,7 @@
 
             <div class="card-white">
                 <h3>Chapter 5</h3>
-                <img src="photos/church.jpg" alt="chpt5" class="routePhotos">
+                <img src="../photos/church.jpg" alt="chpt5" class="routePhotos">
                 <audio controls>
                     <source src="" type="audio/mpeg">
                 </audio>
@@ -111,7 +111,7 @@
 
             <div class="card-white">
                 <h3>Chapter 6</h3>
-                <img src="photos/gargouille.jpg" alt="chpt6" class="routePhotos">
+                <img src="../photos/gargouille.jpg" alt="chpt6" class="routePhotos">
                 <audio controls>
                     <source src="" type="audio/mpeg">
                 </audio>
@@ -119,7 +119,7 @@
 
             <div class="card-white">
                 <h3>Chapter 7</h3>
-                <img src="routePhotos/stop7.jpg" alt="chpt7" class="routePhotos">
+                <img src="../routePhotos/stop7.jpg" alt="chpt7" class="routePhotos">
                 <audio controls>
                     <source src="" type="audio/mpeg">
                 </audio>
@@ -127,7 +127,7 @@
 
             <div class="card-white">
                 <h3>Chapter 8</h3>
-                <img src="routePhotos/stop8.jpg" alt="chpt8" class="routePhotos">
+                <img src="../routePhotos/stop8.jpg" alt="chpt8" class="routePhotos">
                 <audio controls>
                     <source src="" type="audio/mpeg">
                 </audio>
@@ -135,7 +135,7 @@
 
             <div class="card-white">
                 <h3>Chapter 9</h3>
-                <img src="photos/gargouille.jpg" alt="chpt9" class="routePhotos">
+                <img src="../photos/gargouille.jpg" alt="chpt9" class="routePhotos">
                 <audio controls>
                     <source src="" type="audio/mpeg">
                 </audio>
@@ -145,24 +145,24 @@
     </section>
 
     <footer>
-        <a href="index.html"></span>Home</a>
+        <a href="../pages/index.html"></span>Home</a>
         <!-- < a href = "map.html" ></span > Map</a > -->
         <a href="mailto:kayle.robson@gmail.com"></span>Contact</a>
         <a href="https://revyrob.github.io/kaylerobson/" target="_blank"></span>About</a>
         <a href="">© 2021 Kayle Robson</span></a>
     </footer>
 
-    <script src="js/qgis2web_expressions.js"></script>
-    <script src="js/leaflet.js"></script>
-    <script src="js/leaflet.rotatedMarker.js"></script>
-    <script src="js/leaflet.pattern.js"></script>
-    <script src="js/leaflet-hash.js"></script>
-    <script src="js/Autolinker.min.js"></script>
-    <script src="js/rbush.min.js"></script>
-    <script src="js/labelgun.min.js"></script>
-    <script src="js/labels.js"></script>
-    <script src="data/laRoute_1.js"></script>
-    <script src="data/route_2.js"></script>
+    <script src="../js/qgis2web_expressions.js"></script>
+    <script src="../js/leaflet.js"></script>
+    <script src="../js/leaflet.rotatedMarker.js"></script>
+    <script src="../js/leaflet.pattern.js"></script>
+    <script src="../js/leaflet-hash.js"></script>
+    <script src="../js/Autolinker.min.js"></script>
+    <script src="../js/rbush.min.js"></script>
+    <script src="../js/labelgun.min.js"></script>
+    <script src="../js/labels.js"></script>
+    <script src="../data/laRoute_1.js"></script>
+    <script src="../data/route_2.js"></script>
     <script>
         // L Map editted
         var map = L.map('map', { zoomControl: true, maxZoom: 28, minZoom: 1 }).setView([44.89940, 6.64487], 17);
