@@ -20,7 +20,7 @@ body {
     background-color: #494949;
 }
 .container {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 #intro img {
     height: 600px;
@@ -46,10 +46,10 @@ body {
         text-shadow: none;
         transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
         padding:10px;
-        background-color: black;
+        background-color: #E5383B;
         border: 1px solid;
         filter: drop-shadow(0 0 0.75rem #E5383B);
-        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, .5), 0 0 20px rgba(255, 255, 255, .2);
         outline-color: rgba(255, 255, 255, 0);
         outline-offset: 15px;
         text-shadow: 1px 1px 2px #427388;
@@ -59,7 +59,7 @@ body {
         box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
         outline-color: rgba(255, 255, 255, .5);
         outline-offset: 0px;
-        text-shadow: 1px 1px 2px #427388; 
+        text-shadow: 1px 1px 2px black; 
         }
 #extraBtn {
     top:100px;
