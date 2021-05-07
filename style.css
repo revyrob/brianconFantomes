@@ -76,6 +76,10 @@ h2 {
     font-size: 1.75em;
     color: #B1A7A6;
 }
+h4 {
+    font-family: 'Creepster', cursive;
+    font-size: 1em;
+}
 #logo-intro {
     display:inline-flexbox;
 }
