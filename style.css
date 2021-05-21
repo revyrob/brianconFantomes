@@ -17,22 +17,16 @@ body {
     font-size: 1em;
     font-weight: 300;
     font-family: 'Oswald', sans-serif;
-    background-color: #494949;
+    background-color: #161A1D;
 }
 .container {
     padding-top: 50px;
 }
-#intro img {
-    height: 600px;
-    justify-self: center;
+.intro {
+    padding-top: 25px;
 }
-.intro button {
-    display: flex;
-    flex-direction:column;
-    height: 33%;
-    justify-content: center;
-    text-align: center;
-    width: 33%;
+#photoSection {
+    padding-top: 75px;
 }
 .btnContainer{
     display:inline-block;
@@ -106,7 +100,12 @@ footer {
     color: #F5F3F4;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 10px;
+}
+#copy {
+    color: black;
+    font-size: smaller;
 }
 @media (max-width: 425px) {
     #route {
@@ -164,6 +163,41 @@ footer {
 #downbtn {
     height: 30px;
 }
-
+.download-button {
+    display: flexbox;
+    flex-direction: row;
+    background: #E5383B url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyNSI+PHBhdGggZD0iTTEzLjMsMTguOWMwLjIsMC4yLDAuNCwwLjMsMC43LDAuM3MwLjUtMC4xLDAuNy0wLjNsNS44LTYuN2MwLjQtMC40LDAuNC0xLDAtMS40Yy0wLjQtMC40LTEtMC40LTEuNCwwIEwxNSwxNS42VjFjMC0wLjUtMC40LTEtMS0xcy0xLDAuNC0xLDF2MTQuN2wtNC4xLTQuOGMtMC40LTAuNC0xLTAuNC0xLjQsMGMtMC40LDAuNC0wLjQsMSwwLDEuNEwxMy4zLDE4Ljl6IE0yNywxNSBjLTAuNSwwLTEsMC41LTEsMXY3SDJ2LTdjMC0wLjUtMC41LTEtMS0xcy0xLDAuNS0xLDF2OGMwLDAuNSwwLjUsMSwxLDFoMjZjMC41LDAsMS0wLjUsMS0xdi04QzI4LDE1LjUsMjcuNSwxNSwyNywxNXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=) 18px/32px auto no-repeat;
+    font-size: 20px;
+    height: 45px;
+    padding: 15px 40px 10px 75px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 60%;
+    margin-top: 15px;
+    border-radius: 8px; 
+}
+.old-paper{
+    position:relative;
+    max-width:850px;
+  }
+.overlay{
+    mix-blend-mode:multiply;
+    position:absolute;
+    display:inline-block;
+    left:0;
+    top:0;
+    right:0;
+    bottom:-5px;
+}
+  
+.overlay img{
+    width:100%;
+    height:100%;
+}
+figure {
+    margin:0;
+    padding:0;
+}
 
 
