@@ -82,10 +82,10 @@ h4 {
     width: 110px;
     padding: 5px;
 }
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     #logo-navbar {
-        height: 50px;
-}}
+        height: 40px;
+}} */
 a {
     text-decoration: none;
     color: whitesmoke;
