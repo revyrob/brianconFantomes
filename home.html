@@ -16,21 +16,21 @@
 </head>
 
 <body>
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-lg py-0 fixed-top">
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-lg py-0">
         <a href="home.html" class="navbar-brand">
-            <img src="logo/new.logoé.png" alt="briancon fantomes logo" id="logo-navbar">
+            <img src="logo/logo.design.png" alt="briancon fantomes logo" id="logo-navbar">
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navLinks">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="home.html" class="nav-link">HOME</a>
-                </li>
                 <!-- <li class="nav-item">
-                    <a href="map.html" class="nav-link">AUDIO</a>
+                    <a href="home.html" class="nav-link">HOME</a>
                 </li> -->
+                <li class="nav-item">
+                    <a href="audioAng.html" class="nav-link">THE ROUTE</a>
+                </li>
                 <li class="nav-flag">
                     <a href="index.html" class="nav-link"><img src="photos/frenchFlag.jpg" id="flag"
                             alt="french flag"></a>
@@ -44,20 +44,29 @@
     </nav>
 
 
-    <section class="container-fluid px-0">
+    <section class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-4 col-md-6 btnContainer">
+            <div class="col-lg-4 col-md-6 btnContainer ">
                 <img src="photos/church.jpg" alt="church" class="img-fluid">
+                <div class="overlay">
+                    <img src="photos/black_frame.png">
+                </div>
                 <a href="audioAng.html" alt="purchase">PURCHASE</a>
             </div>
             <div class="col-lg-4 col-md-6 d-none d-md-block">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center old-paper">
                     <img src="photos/gargouille.jpg" alt="gargouille" class="img-fluid">
+                    <div class="overlay">
+                        <img src="photos/black_frame.png">
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 d-none d-lg-block">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center old-paper">
                     <img src="photos/oldtown2.jpg" alt="snowy streets" class="img-fluid">
+                    <div class="overlay">
+                        <img src="photos/black_frame.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,13 +99,11 @@
                 <div class="row justify-content-center">
                     <h2>COST</h2>
                     <p>
-                        By pressing <a href="audioAng.html">PURCHASE</a> you will be redirected to Paypal and
-                        can
-                        purchase the audio
-                        for €3.
+                        By pressing <a href="audioAng.html">PURCHASE</a> you will be redirected to Paypal and you
+                        can purchase the audio for €3.50.
                         After the purchase has been confirmed an email will be sent to you along with a URL where you
-                        can obtain the
-                        audio in English and the route map. You will
+                        can download the audio in English and the route map.
+                        You will
                         have access to the URL for 24hrs from your purchase.
                     </p>
                 </div>
@@ -106,7 +113,7 @@
                     <h2>TERMS OF PURCHASE</h2>
                     <p>
                         By purchasing this audio theatre experience you agree not to share
-                        this intellectual property. All purchases are final.
+                        the audio. All purchases are final.
                     </p>
                 </div>
             </div>
@@ -132,10 +139,15 @@
     </section>
 
     <footer>
-        <a href="home.html"></span>Home</a>
-        <!-- <a href="map.html"></span>Map</a> -->
-        <a href="mailto:brianconfantomes@gmail.com"></span>Contact</a>
-        <a href="https://revyrob.github.io/kaylerobson/" target="_blank"></span>About</a>
+        <div class="col-lg-4 text-center px-5">
+            <a href="index.html"></span>Home</a>
+        </div>
+        <div class="col-lg-4 text-center px-5">
+            <a href=" mailto:brianconfantomes@gmail.com"></span>Contact</a>
+        </div>
+        <div class="col-lg-4 text-center px-5">
+            <a href="https://revyrob.github.io/kaylerobson/" target="_blank"></span>About</a>
+        </div>
         <div id="copy">© Briançon Fantômes. All Rights Reserved.</div>
     </footer>
 

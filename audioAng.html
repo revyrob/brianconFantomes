@@ -15,6 +15,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <!-- <style>
@@ -27,9 +28,9 @@
 </head>
 
 <body>
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0">
         <a href="home.html" class="navbar-brand">
-            <img src="logo/new.logoé.png" alt="" id="logo-navbar">
+            <img src="logo/logo.design.png" alt="" id="logo-navbar">
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" type="button">
             <span class="navbar-toggler-icon"></span>
@@ -46,9 +47,9 @@
         </div>
     </nav>
 
-    <section class="spaceHeader">
+    <section class="">
         <div class="container">
-            <h2>LA ROUTE</h2>
+            <h2>THE ROUTE</h2>
             <p>Below you will find the route for the Audio Theatre Experience. We recommend to depart in the evening
                 because the ambiance of the old town is envoking and mysterious.</p>
             <div class="map">
@@ -60,44 +61,43 @@
 
     <section class="container">
         <div>
-            <h2>AUDIO</h2>
-            <p>The audio is set-up in 9 Chapters corresponding with each stop. Click on the photo for each chapter to
-                download the audio.</p>
+            <h2>CHAPTERS</h2>
+            <p>The audio is set-up in 9 Chapters corresponding with each stop. When you select <a
+                    href="audioAng.html">PURCHASE</a> the audio is
+                sent to you, download it onto your phone. Follow along with the map and photos.</p>
         </div>
+
         <div class="card-container">
             <div class="card-white">
                 <h3>Chapter 1</h3>
                 <h4>Porte de Pignerol</h4>
-                <img src="routePhotos/stop2.jpg" alt="chpt2" class="routePhotos">
-                <figure>
-                    <audio controls preload="auto">
-                        <source src="audio/Barry White - My First My Last My Everything - Lyrics.mp3" type="audio/mpeg">
-                        <p>If audio does not start, the <audio> HTML element is not supported in your browser. Please
-                                contact by email.</p>
-                    </audio>
-                </figure>
+                <img src="routePhotos/stop1.jpg" alt="chpt1" class="routePhotos">
+                <audio controls>
+                    <!-- in future I will need to reference the audio the the website where the music lives like 
+                    https//:brianconfantomes.com/adioAng/audio/ArethaFranklinsayalittleprayer -->
+                    <source src="audioAng/Chapter 1.mp3" type="audio/mpeg">
+                    <p>If audio does not start, the <audio> HTML element is not supported in your browser.</p>
+                </audio>
             </div>
 
-            <!-- test download
+            <!-- Download example
             <div class="card-white">
                 <h3>Chapter 1</h3>
                 <h4>Porte de Pignerol</h4>
-                <a href="audio/Barry White - My First My Last My Everything - Lyrics.mp3" download><img
-                        src="photos/download_icon30.png" id="downbtn"></a> 
                 <img src="routePhotos/stop1.jpg" alt="chpt1" class="routePhotos">
                 <a class="download-button" target="_blank"
                     href="audio/Barry White - My First My Last My Everything - Lyrics.mp3"
                     download="Barry White - My First My Last My Everything" rel="audio/mp3">Download
                 </a>
 
-            </div> -->
+            </div>-->
 
             <div class="card-white">
                 <h3>Chapter 2</h3>
                 <h4>Chemin de Ronde</h4>
                 <img src="routePhotos/stop2.jpg" alt="chpt2" class="routePhotos">
-                <audio controls preload="none">
-                    <source src="audio/Aretha Franklin - I say a little prayer _ with lyrics.mp3" type="audio/mpeg">
+                <audio controls>
+                    <source src="audioAng/chap2.mp3" type="audio/mp3">
                 </audio>
             </div>
 
@@ -106,8 +106,8 @@
                 <h3>Chapter 3</h3>
                 <h4>Chemin du Fort des Tetes</h4>
                 <img src="routePhotos/stop3.jpg" alt="chpt3" class="routePhotos">
-                <audio controls preload="metadata">
-                    <source src="audio/Chvrches - _Now is Not The Time_.mp3" type="audio/mpeg">
+                <audio controls>
+                    <source src="audioAng/chap3.mp3" type="audio/mp3">
                 </audio>
             </div>
 
@@ -117,8 +117,7 @@
                 <h4>Rue du Pont d'Asfeld</h4>
                 <img src="routePhotos/stop4.jpg" alt="chpt4" class="routePhotos">
                 <audio controls>
-                    <source src="audio/Cyndi Lauper - Girls Just Want To Have Fun (Official Video).mp3"
-                        type="audio/mpeg">
+                    <source src="audioAng/chap4.mp3" type="audio/mp3">
                 </audio>
             </div>
 
@@ -128,7 +127,7 @@
                 <h4>Rue Domaine Chautard</h4>
                 <img src="photos/church.jpg" alt="chpt5" class="routePhotos">
                 <audio controls>
-                    <source src="audio/Deep Purple - Smoke on the Water.mp3" type="audio/mpeg">
+                    <source src="audioAng/chap5.mp3" type="audio/mp3">
                 </audio>
             </div>
 
@@ -138,7 +137,7 @@
                 <h4>Place d'Armes</h4>
                 <img src="photos/gargouille.jpg" alt="chpt6" class="routePhotos">
                 <audio controls>
-                    <source src="audio/Frank Sinatra - The Way You Look Tonight Original.mp3" type="audio/mpeg">
+                    <source src="audioAng/chap6.mp3" type="audio/mpeg">
                 </audio>
             </div>
 
@@ -147,7 +146,7 @@
                 <h4>Rue Mercerie</h4>
                 <img src="routePhotos/stop7.jpg" alt="chpt7" class="routePhotos">
                 <audio controls>
-                    <source src="audio/Queen - Crazy Little Thing Called Love (Lyrics).mp3" type="audio/mpeg">
+                    <source src="audioAng/chap7.mp3" type="audio/mp3">
                 </audio>
             </div>
 
@@ -156,7 +155,7 @@
                 <h4>Avenue Vauban</h4>
                 <img src="routePhotos/stop8.jpg" alt="chpt8" class="routePhotos">
                 <audio controls>
-                    <source src="audio/The Clash - Should I Stay or Should I Go.mp3" type="audio/mpeg">
+                    <source src="audioAng/chap8.mp3" type="audio/mp3">
                 </audio>
             </div>
 
@@ -165,19 +164,48 @@
                 <h4>Grande Rue/Rue du Pont d'Asfeld</h4>
                 <img src="photos/gargouille.jpg" alt="chpt9" class="routePhotos">
                 <audio controls>
-                    <source src="audio/Village People - YMCA OFFICIAL Music Video 1978.mp3" type="audio/mpeg">
+                    <source src="audioAng/Chap9.mp3" type="audio/mp3">
                 </audio>
             </div>
         </div>
         <br>
     </section>
 
+    <section class="container">
+        <div>
+            <h2>CREDITS</h2>
+        </div>
+        <div class="credits">
+            <h3>Writer/Producer/Web Design</h3>
+            <p><a href="www.kaylerobson.com">Kayle Robson</a></p>
+            <h3>Voice</h3>
+            <p><a href="">Erwann</a></p>
+            <h3>Music</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <h3>References</h3>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+    </section>
+
     <footer>
-        <a href="home.html"></span>Home</a>
-        <!-- < a href = "map.html" ></span > Map</a > -->
-        <a href="mailto:brianconfantomes@gmail.com"></span>Contact</a>
-        <a href="https://revyrob.github.io/kaylerobson/" target="_blank"></span>About</a>
-        <a href="">© 2021 Briançon Fantomes. All rights reserved.</span></a>
+        <div class="col-lg-4 text-center px-5">
+            <a href="index.html"></span>Home</a>
+        </div>
+        <div class="col-lg-4 text-center px-5">
+            <a href=" mailto:brianconfantomes@gmail.com"></span>Contact</a>
+        </div>
+        <div class="col-lg-4 text-center px-5">
+            <a href="https://revyrob.github.io/kaylerobson/" target="_blank"></span>About</a>
+        </div>
+        <div id="copy">© Briançon Fantômes. All Rights Reserved.</div>
     </footer>
 
     <script src="js/qgis2web_expressions.js"></script>
