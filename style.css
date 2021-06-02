@@ -201,6 +201,19 @@ footer {
     width:100%;
     height:100%;
 }
+.credits {
+    text-align: center;
+    align-items: center;  
+}
+.title-credits {
+    margin: 15px 0 15px;  
+    text-align: left;
+    
+}
+.credits h3 {
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+
 
 
 
