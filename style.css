@@ -134,12 +134,13 @@ footer {
     flex-wrap: wrap;
 }
 .card-white {
-    box-shadow: 1px 1px 10px #f1f0f080;
+    box-shadow: 5px 5px 10px #E5383B;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
     width: 350px;
     text-align: center;
+    border: 1px solid rgb(56, 56, 56);
 }
 .card-white img{
     width: 180px;
