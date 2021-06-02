@@ -2,7 +2,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
     line-height: 2em;
-    background-color: #161A1D;
+    background-color: black;
     color: white;
 }
 .nav-item {
@@ -18,7 +18,7 @@ body {
     font-size: 1em;
     font-weight: 300;
     font-family: 'Oswald', sans-serif;
-    background-color: #2d2d2ef5;
+    background-color: black;
 }
 .container {
     padding-top: 50px;
@@ -79,7 +79,7 @@ h4 {
     display:inline-flexbox;
 }
 #logo-navbar {
-    width: 110px;
+    height: 75px;
     padding: 5px;
 }
 /* @media (max-width: 425px) {
@@ -147,9 +147,9 @@ footer {
     object-fit: contain;
 }
 .spaceHeader {
-    padding-top: 50px;
+    padding-top: 25px;
 }
-#flag {
+.flag {
     height: 30px;
     width: 50px;
 }
@@ -157,9 +157,13 @@ footer {
     width: 800px;
     height: 550px;
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
     #map {
-        height: 400px;
+        width: 400px;
+}
+#logo-navbar {
+    height: 55px;
+    padding: 5px;
 }}
 /* #downbtn {
     height: 30px;
