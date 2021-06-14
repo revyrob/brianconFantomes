@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!--link javascript code for map-->
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/qgis2web.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <script type="text/javascript" src="scripts.js"></script>
 
     <meta name="copyright" content="Briancon fantomes is a registered name" />
     <meta name="description" content="theatre/tour de la vieille ville de Briancon" />
@@ -27,12 +32,18 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navLinks">
             <ul class="navbar-nav">
-                <!-- <li class="nav-item">
-                    <a href="#quel" class="nav-link">QUEL</a>
+                <li class="nav">
+                    <a href="#quoi" class="nav-link">QUOI</a>
                 </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">OU</a>
-                </li> -->
+                <li class="nav">
+                    <a href="#ou" class="nav-link">OÙ</a>
+                </li>
+                <li class="nav">
+                    <a href="#prix" class="nav-link">PRIX</a>
+                </li>
+                <li class="nav">
+                    <a href="#terms" class="nav-link">CONDITIONS</a>
+                </li>
                 <li class="nav-flag">
                     <a href="index.html" class="nav-link"><img src="photos/frenchFlag.jpg" class="flag"
                             alt="french flag"></a>
@@ -74,30 +85,55 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="what">
         <h2>L'EXPERIENCE AUDIO THEÂTRALE</h2>
-        <!-- <img src="logo.design.png" alt="logo" id="logo-intro"> -->
         <p>
             Laissez-vous guider à travers les ruelles et les passages à la découverte de l'histoire et des légendes de
             Briançon.
-            Briançon Fantômes est une
-            expérience audio théâtrale. Achetez l'audio sur notre site, puis suivez notre itinéraire à travers la
-            vieille
-            ville de
-            Briançon. Vous aurez besoin d'un smartphone, d'un casque et du WiFi (pour télécharger
-            thé
-            l'audio). L'expérience audio théâtre audio prend entre
+        </p>
+        <p>
+            <!-- added -->
+            Vous serez divertis par les histoires des Celtes qui se sont installés dans cette région il y a 2000 ans,
+            les
+            des incendies qui ont incendié la ville de Briançon à deux reprises, des sorcières, et bien plus encore ! Il
+            y a de la musique et des sons ajoutés à
+            créer une ambiance que vous
+            n'oubliera pas.
+            <!-- end of added-->
+        </p>
+        <p>
+            <!--changed-->
+            Lorsque vous achetez l'audio sur notre site, vous recevez l'audio, une carte, des photos et des noms de rue
+            pour
+            chaque arrêt.
+            Suivez la carte du chapitre 1 au chapitre 9. Vous aurez besoin d'un smartphone, d'un casque et du WiFi (pour
+            télécharger
+            les
+            l'audio).
+            <!--end of change-->
+        </p>
+        <p>
+            L'expérience audio théâtre audio prend entre
             60-90 minutes pour terminer et nous vous recommandons de le faire en fin d'après-midi ou en soirée car
             l'atmosphère
             dans la vieille ville de Briançon est mystique à la tombée de la nuit.
-            <br>
+        </p>
+        <p>
             En achetant ce
             expérience de théâtre audio, vous acceptez ce qui suit : si vous vous blessez, perdez connaissance, perdez
             vos fausses dents, contractez la peste, vos cheveux blanchissent de terreur ou tout ce qui pourrait nuire à
             votre
-            santé - sera de votre responsabilité. L'expérience théâtre audio est accessible pour les enfants à partir de
+            santé - sera de votre responsabilité! L'expérience théâtre audio est accessible pour les enfants à partir de
             8 ans.
         </p>
+    </div>
+
+    <div class="container" id="where">
+        <h2>THE ROUTE</h2>
+        <div class="map">
+            <div id="map">
+            </div>
+        </div>
     </div>
 
     <div class="container-fluid container">
@@ -109,19 +145,26 @@
                         En appuyant sur <a href="laRoute.html">ACHETEZ</a> vous serez redirigé vers Paypal et
                         vous
                         pouvez acheter l'audio pour 3,50 €.
-                        Lorsque vous achetez l'audio, une URL sera incluse avec la confirmation de paiement. L'URL sera
-                        vous diriger vers un site Web de transfert de fichiers sécurisé où vous pouvez télécharger
-                        l'audio sur votre téléphone.
-                        La carte de l'itinéraire se trouve sur notre site Web sous « L'itinéraire » avec des photos
-                        faisant référence à chaque arrêt.
-                        Vous serez
-                        avoir accès à l'URL pendant 24 heures à compter de votre achat.
-
+                        Lorsque vous achetez l'audio, une URL sera incluse avec la confirmation de paiement.
+                        <!--changed-->
+                    </p>
+                    <p>
+                        **Vous devez ouvrir l'URL audio dans un navigateur Chrome pour Android ou dans Safari pour
+                        Apple.**
+                    </p>
+                    <p>
+                        Les chapitres audio, la carte de l'itinéraire, les photos et les noms de rue sont inclus dans
+                        l'URL audio. </p>
+                    <p>
+                        Si vous avez des problèmes, envoyez-nous un e-mail.
+                    </p>
+                    <p>
+                        **Vous avez accès à l'URL audio pendant 24 heures à compter de votre achat.**
                     </p>
                 </div>
             </div>
             <div class="col-sm-6" id="route">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" id="terms">
                     <h2>CONDITIONS D'ACHAT</h2>
                     <p>
                         En achetant cette expérience audio théâtrale, vous acceptez de ne pas partager
@@ -130,15 +173,11 @@
                 </div>
             </div>
         </div>
-        <div class="btnContainer" id="extraBtn">
-            <a href="laRoute.html">ACHETEZ</a>
-        </div>
     </div>
 
-    <div class="container" id="contact">
-        <div class="container">
-            <h2>CONTACT</h2>
-            <a href="mailto:brianconfantomes@gmail.com">brianconfantomes@gmail.com</a>
+    <div class="container">
+        <div class="btnContainer" id="extraBtn">
+            <a href="laRoute.html">ACHETEZ</a>
         </div>
     </div>
 
@@ -162,7 +201,146 @@
         </div>
         <div id="copy">© 2020 Briançon Fantômes. All Rights Reserved.</div>
     </footer>
+    <script src="js/qgis2web_expressions.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/leaflet.rotatedMarker.js"></script>
+    <script src="js/leaflet.pattern.js"></script>
+    <script src="js/leaflet-hash.js"></script>
+    <script src="js/Autolinker.min.js"></script>
+    <script src="js/rbush.min.js"></script>
+    <script src="js/labelgun.min.js"></script>
+    <script src="js/labels.js"></script>
+    <script src="data/laRoute_1.js"></script>
+    <script src="data/route_2.js"></script>
+    <script>
+        // L Map editted
+        var map = L.map('map', { zoomControl: true, maxZoom: 28, minZoom: 1 }).setView([44.89940, 6.64487], 17);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({ truncate: { length: 30, location: 'smart' } });
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
 
+        map.createPane('pane_OSM_0');
+        map.getPane('pane_OSM_0').style.zIndex = 400;
+        var layer_OSM_0 = L.tileLayer('https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=1d4d71be765c47919143726197f84d5f', {
+            pane: 'pane_OSM_0',
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 18
+        });
+        layer_OSM_0;
+        map.addLayer(layer_OSM_0);
+        function pop_laRoute_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, { maxHeight: 400 });
+        }
+
+        function style_laRoute_1_0() {
+            return {
+                pane: 'pane_laRoute_1',
+                opacity: 1,
+                color: 'rgba(227,26,28,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 7.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_laRoute_1');
+        map.getPane('pane_laRoute_1').style.zIndex = 401;
+        map.getPane('pane_laRoute_1').style['mix-blend-mode'] = 'normal';
+        var layer_laRoute_1 = new L.geoJson(json_laRoute_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_laRoute_1',
+            layerName: 'layer_laRoute_1',
+            pane: 'pane_laRoute_1',
+            onEachFeature: pop_laRoute_1,
+            style: style_laRoute_1_0,
+        });
+        bounds_group.addLayer(layer_laRoute_1);
+        map.addLayer(layer_laRoute_1);
+        function pop_route_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>Stop</strong><br />' + (feature.properties['Stop'] !== null ? autolinker.link(feature.properties['Stop'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, { maxHeight: 400 });
+        }
+
+        function style_route_2_0() {
+            return {
+                pane: 'pane_route_2',
+                radius: 8.0,
+                opacity: 1,
+                color: 'rgba(128,17,25,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 4.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(10,3,4,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_route_2');
+        map.getPane('pane_route_2').style.zIndex = 402;
+        map.getPane('pane_route_2').style['mix-blend-mode'] = 'normal';
+        var layer_route_2 = new L.geoJson(json_route_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_route_2',
+            layerName: 'layer_route_2',
+            pane: 'pane_route_2',
+            onEachFeature: pop_route_2,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_route_2_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_route_2);
+        map.addLayer(layer_route_2);
+        setBounds();
+        var i = 0;
+        layer_route_2.eachLayer(function (layer) {
+            var context = {
+                feature: layer.feature,
+                variables: {}
+            };
+            layer.bindTooltip((layer.feature.properties['Stop'] !== null ? String('<div style="color: #000000; font-size: 13pt; font-family: \'Showcard Gothic\', sans-serif;">' + layer.feature.properties['Stop']) + '</div>' : ''), { permanent: true, offset: [-0, -16], className: 'css_route_2' });
+            labels.push(layer);
+            totalMarkers += 1;
+            layer.added = true;
+            addLabel(layer, i);
+            i++;
+        });
+        resetLabels([layer_route_2]);
+        map.on("zoomend", function () {
+            resetLabels([layer_route_2]);
+        });
+        map.on("layeradd", function () {
+            resetLabels([layer_route_2]);
+        });
+        map.on("layerremove", function () {
+            resetLabels([layer_route_2]);
+        });
+    </script>
     <!--jQuery first, then Popper.js, then Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

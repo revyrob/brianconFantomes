@@ -35,7 +35,7 @@ body {
     }
 .btnContainer a{
         position: absolute;
-        bottom:25px;
+        bottom:100px;
         left:45px;
         outline: 1px solid;
         text-shadow: none;
@@ -165,7 +165,11 @@ footer {
 #logo-navbar {
     height: 55px;
     padding: 5px;
-}}
+}
+#terms {
+    padding-top: 50px;
+}
+}
 /* #downbtn {
     height: 30px;
 }
