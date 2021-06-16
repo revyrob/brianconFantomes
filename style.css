@@ -159,17 +159,21 @@ footer {
     height: 550px;
 }
 @media (max-width: 576px) {
-    #map {
-        width: 400px;
-}
-#logo-navbar {
+    #logo-navbar {
     height: 55px;
     padding: 5px;
-}
-#terms {
+    }
+    #terms {
     padding-top: 50px;
+}}
+@media (max-width: 768px) {
+    #map {
+        margin-left:25px;
+        margin-right:25px;
+        height: 500px;
+    }
 }
-}
+
 /* #downbtn {
     height: 30px;
 }
