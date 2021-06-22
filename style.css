@@ -164,7 +164,8 @@ footer {
     padding: 5px;
     }
     #terms {
-    padding-top: 50px;
+    margin-top: 40px;
+    padding-bottom: 25px;
 }}
 @media (max-width: 768px) {
     #map {
