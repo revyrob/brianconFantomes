@@ -164,6 +164,11 @@ footer {
         height: 500px;
     }
 }
+@media (max-width: 376px) {
+    #logo-navbar {
+        height: 45px;
+    }
+}
 .old-paper{
     position:relative;
     max-width:850px;
@@ -193,8 +198,7 @@ footer {
     border-bottom: 3px solid rgb(56, 56, 56);
 }
 .soon-container {
-    padding-top: 150px;
-    padding-left: 100px;
+    margin:150px 25px 50px 25px;
 }
 
 
