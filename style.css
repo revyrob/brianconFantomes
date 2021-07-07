@@ -62,8 +62,12 @@ body {
 }
 h1 {
     font-family: 'Creepster', cursive;
-    font-size: 1.25em;
-    color: #B1A7A6;
+    font-size: 2em;
+    color: #E5383B;
+}
+h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 1.5em;
 }
 h4 {
     font-family: 'Creepster', cursive;
