@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -14,16 +14,32 @@
     <link rel="stylesheet" href="css/leaflet.css">
     <link rel="stylesheet" href="css/qgis2web.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <script type="text/javascript" src="scripts.js"></script>
+    <script src="scripts.js"></script>
 
-    <meta name="copyright" content="Briancon fantomes is a registered name" />
-    <meta name="description" content="theatre/tour de la vieille ville de Briançon" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHF6SBW7WQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MHF6SBW7WQ');
+    </script>
+    <!-- End of Global site tag (gtag.js) - Google Analytics -->
+
+    <meta name="copyright" content="Briancon fantomes is a registered name">
+    <meta name="description" content="Une aventure extraordinaire dans la vieille ville de Briançon. Voyagez à travers le temps, et visitez
+    la cité Vauban autrement. Laissez-nous vous effrayer et vous surprendre en vous guidant à
+    travers les ruelles et les passages. Découvrez l'histoire sombre et les légendes de Briançon!">
     <meta name="keywords"
-        content="L'expérience audio théâtrale, theatre, show, tour, Briançon, serre chevalier, Serre Chevalier, fantômes" />
-    <title>ACCUEIL | Briançon Fantômes</title>
+        content="balade auditive, walking tour, theatre, show, tour, Briançon, Serre Chevalier, Briancon Fantomes">
+    <link rel="icon" href="logo/ghostFavicon.png" type="image/x-icon">
+
+    <title>Accueil | Briançon Fantômes</title>
 </head>
 
 <body>
+
     <nav id="mainNavbar" class="navbar sticky-top navbar-dark navbar-expand-lg py-0">
         <a href="index.html" class="navbar-brand">
             <img src="logo/logoskull.png" alt="briancon fantomes logo" id="logo-navbar">
@@ -37,13 +53,10 @@
                     <a href="#what" class="nav-link">QUOI</a>
                 </li>
                 <li class="nav">
-                    <a href="#where" class="nav-link">OÙ</a>
+                    <a href="laRoute.html" class="nav-link">OÙ</a>
                 </li>
                 <li class="nav">
-                    <a href="#cost" class="nav-link">PRIX</a>
-                </li>
-                <li class="nav">
-                    <a href="#terms" class="nav-link">CONDITIONS</a>
+                    <a href="RouteFra.html" class="nav-link">AUDIO</a>
                 </li>
                 <li class="nav-flag">
                     <a href="index.html" class="nav-link"><img src="photos/frenchFlag.jpg" class="flag"
@@ -57,71 +70,72 @@
         </div>
     </nav>
 
-
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-4 col-md-6 btnContainer ">
-                <img src="photos/church.jpg" alt="church" class="img-fluid">
-                <div class="overlay">
-                    <img src="photos/black_frame.png" alt="black frame">
+            <div class="col-lg-4 col-md-6 d-md-block">
+                <div class="row justify-content-center old-paper">
+                    <img src="photos/photoByAaronBurdenOnUnsplash2.jpg" alt="smartphone and book and headset"
+                        class="img-fluid">
+                    <div class="overlay">
+                        <img src="photos/black_frame.png" alt="black border">
+                    </div>
                 </div>
-                <a href="commandez.html">ACHETEZ</a>
             </div>
             <div class="col-lg-4 col-md-6 d-none d-md-block">
                 <div class="row justify-content-center old-paper">
-                    <img src="photos/gargouille.jpg" alt="gargouille" class="img-fluid">
+                    <img src="photos/city2.png" alt="briancon" class="img-fluid">
                     <div class="overlay">
-                        <img src="photos/black_frame.png" alt="black frame">
+                        <img src="photos/black_frame.png" alt="black border">
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 d-none d-lg-block">
                 <div class="row justify-content-center old-paper">
-                    <img src="photos/oldtown2.jpg" alt="snowy streets" class="img-fluid">
+                    <img src="photos/briancon.jpg" alt="Briancon entrance" class="img-fluid">
                     <div class="overlay">
-                        <img src="photos/black_frame.png" alt="black frame">
+                        <img src="photos/black_frame.png" alt="black border">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+    <div class="container">
+        <h1>BALADE AUDITIVE</h1>
+        <p>
+            Une aventure extraordinaire dans la vieille ville de Briançon. Voyagez à travers le temps, et visitez
+            la cité Vauban autrement. Laissez-nous vous effrayer et vous surprendre en vous guidant à
+            travers les ruelles et les passages. Découvrez l'histoire sombre et les légendes de Briançon!
+        </p>
+    </div>
+
+
     <div class="container" id="what">
-        <h1>L'EXPERIENCE AUDIO THEÂTRALE</h1>
+        <h2>QUOI</h2>
         <p>
-            <!-- Laissez-vous guider à travers les ruelles et les passages à la découverte de l'histoire et des légendes de
-            Briançon. -->
-            Une aventure extraordinaire dans la vieille ville de Briançon. Voyagez à travers le temps, et visiter
-            la cité Vauban autrement. Laissez-vous guider à travers ses
-            ruelles et ses passages à la découverte de l'histoire et des légendes de Briançon.
-        </p>
+            Vous serez transportés par les histoires des Celtes qui se sont installés dans cette région il y a 2000 ans.
+            Les récits des incendies qui ont ravagé la ville à deux reprises, la rencontre de sorcières, et bien plus
+            encore. Ecoutez les musiques et les ambiances sonores pour une expérience inoubliable. Briançon Fantômes
+            n'est pas pour les timides!</p>
+        <h5>Notre mission est de vous divertir, de vous effrayer et de vous faire découvrir
+            l'histoire de Briançon!</h5>
+
         <p>
-            <!-- Vous serez divertis par les histoires des Celtes qui se sont installés dans cette région il y a 2000 ans,
-            des incendies qui ont ravagé la ville de Briançon à deux reprises, des sorcières, et bien plus encore ! Il
-            y a de la musique et des sons ajoutés pour
-            créer une ambiance que vous
-            n'oublierez pas. -->
-            Vous serez transportés par les histoires des Celtes qui se sont installés dans cette région il y a 2000 ans,
-            les récits des incendies qui ont ravagé la ville à deux reprises, la rencontre de sorcières, et bien plus
-            encore, à travers des musiques et des ambiances sonores, pour une expérience inoubliable.
-        </p>
-        <p>
-            <!--changed-->
-            Lorsque vous achetez l'audio sur notre site, vous recevez l'audio, une carte, des photos et des noms de rue
-            pour
-            chaque arrêt.
-            Suivez la carte du chapitre 1 au chapitre 9. Vous aurez besoin d'un smartphone, d'un casque et
+            Lorsque vous achetez l'audio sur notre site vous recevez l'audio et une carte de pdf.
+            Vous pouvez telecharger l'audio avant car le WiFi dans la vieille ville et pas le meilleur.
+            Vous aurez besoin d'un smartphone, d'un casque et
             Internet/Data.
-            <!--end of change-->
         </p>
         <p>
             Briançon Fantômes prend entre
-            60-90 minutes pour terminer et nous vous recommandons de le faire en fin d'après-midi ou en soirée car
+            60-90 minutes pour completer la balade. Nous vous recommandons de le faire en fin d'après-midi ou en
+            soirée car
             l'atmosphère
             dans la vieille ville de Briançon est mystique à la tombée de la nuit.
         </p>
         <p>
-            En achetant ce
+            En achetant cette
             expérience de théâtre audio, vous acceptez ce qui suit : si vous vous blessez, perdez connaissance, perdez
             vos fausses dents, contractez la peste, vos cheveux blanchissent de terreur ou tout ce qui pourrait nuire à
             votre
@@ -129,73 +143,16 @@
         </p>
     </div>
 
-    <div class="container" id="where">
-        <h2>LA ROUTE</h2>
-        <div class="map">
-            <div id="map">
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid container">
-        <div class="row align-items-left">
-            <div class="col-sm-6" id="cost">
-                <div class="row justify-content-center">
-                    <h2>PRIX</h2>
-                    <!-- <p>Pour notre première semaine d'activité, nous vous proposons gratuitement Briançon Fantômes ! A
-                        partir du 6 juillet et jusque
-                        au 12, vous pouvez accéder à l'expérience audio théâtrale en appuyant sur le bouton 'ITINERAIRE'
-                        situé en haut et en bas de la page.
-                    </p>
-                    <p>
-                        Après le 12 juillet, l'expérience audio théâtrale coûtera 3,50 € et vous pouvez la payer en
-                        carte de crédit ou débit.
-                    </p> -->
-                    <p>
-                        En appuyant sur <a href="commandez.html">ACHETEZ</a> vous serez
-                        redirigé vers Commandez et
-                        vous
-                        pouvez acheter l'audio pour 3,50 €.
-                        Lorsque vous achetez l'audio, une URL vous sera envoyée dans les 12 heures suivant votre achat.
-                        Vous avez accès à l'URL pendant 7 jours.
-                    </p>
-                    <p>
-                        Les chapitres audio, la carte de l'itinéraire, les photos et les noms de rue sont inclus dans
-                        l'URL audio. </p>
-                    <p>
-                    <p>
-                        **Nous vous conseillons d'ouvrir l'URL audio dans un navigateur Chrome pour Android ou dans
-                        Safari pour Apple.**
-                    </p>
-                    Si vous avez des problèmes, envoyez-nous un <a href="mailhandler.php">e-mail</a>.
-                    </p>
-
-                </div>
-            </div>
-            <div class="col-sm-6" id="route">
-                <div class="row justify-content-center" id="terms">
-                    <h2>CONDITIONS D'ACHAT</h2>
-                    <p>
-                        En achetant cette expérience audio théâtrale, vous acceptez de ne pas partager
-                        cette propriété intellectuelle. Tous les achats sont définitifs.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="btnContainer" id="extraBtn">
-            <a href="commandez.html">ACHETEZ</a>
-        </div>
-    </div>
-
     <div class="container" id="social">
         <!-- <h2>SOCIAL MEDIA</h2> -->
         <a href="https://www.tripadvisor.com/Attraction_Review-g219218-d21176245-Reviews-Les_Fantomes_de_Briancon-Briancon_Hautes_Alpes_Provence_Alpes_Cote_d_Azur.html"
             target="_blank"><img src="photos/tripadvisor.png" alt="tripadvisor logo"></a>
 
-        <!-- <img src="photos/facebook.png" alt="facebook" href=""> -->
+        <a href="https://www.facebook.com/BrianconFantomes" target="_blank"><img src="photos/facebook.png"
+                alt="facebook link"></a>
+
+        <a href="https://www.instagram.com/brianconfantomes" target="_blank"><img src="photos/instaLogo.png"
+                alt="instagram link"></a>
     </div>
 
     <footer class="container-fluid px-0">
@@ -210,146 +167,10 @@
         </div>
         <div id="copy">© 2020 Briançon Fantômes. All Rights Reserved.</div>
     </footer>
-    <script src="js/qgis2web_expressions.js"></script>
-    <script src="js/leaflet.js"></script>
-    <script src="js/leaflet.rotatedMarker.js"></script>
-    <script src="js/leaflet.pattern.js"></script>
-    <script src="js/leaflet-hash.js"></script>
-    <script src="js/Autolinker.min.js"></script>
-    <script src="js/rbush.min.js"></script>
-    <script src="js/labelgun.min.js"></script>
-    <script src="js/labels.js"></script>
-    <script src="data/laRoute_1.js"></script>
-    <script src="data/route_2.js"></script>
-    <script>
-        // L Map editted
-        var map = L.map('map', { zoomControl: true, maxZoom: 28, minZoom: 1 }).setView([44.89940, 6.64487], 17);
-        var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
-        var autolinker = new Autolinker({ truncate: { length: 30, location: 'smart' } });
-        var bounds_group = new L.featureGroup([]);
-        function setBounds() {
-        }
 
-        map.createPane('pane_OSM_0');
-        map.getPane('pane_OSM_0').style.zIndex = 400;
-        var layer_OSM_0 = L.tileLayer('https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=1d4d71be765c47919143726197f84d5f', {
-            pane: 'pane_OSM_0',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-            minNativeZoom: 0,
-            maxNativeZoom: 18
-        });
-        layer_OSM_0;
-        map.addLayer(layer_OSM_0);
-        function pop_laRoute_1(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, { maxHeight: 400 });
-        }
+    <!-- Add the checkout buttons, set up the order and approve the order -->
 
-        function style_laRoute_1_0() {
-            return {
-                pane: 'pane_laRoute_1',
-                opacity: 1,
-                color: 'rgba(227,26,28,1.0)',
-                dashArray: '',
-                lineCap: 'round',
-                lineJoin: 'round',
-                weight: 7.0,
-                fillOpacity: 0,
-                interactive: true,
-            }
-        }
-        map.createPane('pane_laRoute_1');
-        map.getPane('pane_laRoute_1').style.zIndex = 401;
-        map.getPane('pane_laRoute_1').style['mix-blend-mode'] = 'normal';
-        var layer_laRoute_1 = new L.geoJson(json_laRoute_1, {
-            attribution: '',
-            interactive: true,
-            dataVar: 'json_laRoute_1',
-            layerName: 'layer_laRoute_1',
-            pane: 'pane_laRoute_1',
-            onEachFeature: pop_laRoute_1,
-            style: style_laRoute_1_0,
-        });
-        bounds_group.addLayer(layer_laRoute_1);
-        map.addLayer(layer_laRoute_1);
-        function pop_route_2(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2"><strong>Stop</strong><br />' + (feature.properties['Stop'] !== null ? autolinker.link(feature.properties['Stop'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, { maxHeight: 400 });
-        }
 
-        function style_route_2_0() {
-            return {
-                pane: 'pane_route_2',
-                radius: 8.0,
-                opacity: 1,
-                color: 'rgba(128,17,25,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 4.0,
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(10,3,4,1.0)',
-                interactive: true,
-            }
-        }
-        map.createPane('pane_route_2');
-        map.getPane('pane_route_2').style.zIndex = 402;
-        map.getPane('pane_route_2').style['mix-blend-mode'] = 'normal';
-        var layer_route_2 = new L.geoJson(json_route_2, {
-            attribution: '',
-            interactive: true,
-            dataVar: 'json_route_2',
-            layerName: 'layer_route_2',
-            pane: 'pane_route_2',
-            onEachFeature: pop_route_2,
-            pointToLayer: function (feature, latlng) {
-                var context = {
-                    feature: feature,
-                    variables: {}
-                };
-                return L.circleMarker(latlng, style_route_2_0(feature));
-            },
-        });
-        bounds_group.addLayer(layer_route_2);
-        map.addLayer(layer_route_2);
-        setBounds();
-        var i = 0;
-        layer_route_2.eachLayer(function (layer) {
-            var context = {
-                feature: layer.feature,
-                variables: {}
-            };
-            layer.bindTooltip((layer.feature.properties['Stop'] !== null ? String('<div style="color: #000000; font-size: 13pt; font-family: \'Showcard Gothic\', sans-serif;">' + layer.feature.properties['Stop']) + '</div>' : ''), { permanent: true, offset: [-0, -16], className: 'css_route_2' });
-            labels.push(layer);
-            totalMarkers += 1;
-            layer.added = true;
-            addLabel(layer, i);
-            i++;
-        });
-        resetLabels([layer_route_2]);
-        map.on("zoomend", function () {
-            resetLabels([layer_route_2]);
-        });
-        map.on("layeradd", function () {
-            resetLabels([layer_route_2]);
-        });
-        map.on("layerremove", function () {
-            resetLabels([layer_route_2]);
-        });
-    </script>
     <!--jQuery first, then Popper.js, then Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -368,15 +189,7 @@
             });
         });
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHF6SBW7WQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-MHF6SBW7WQ');
-    </script>
 </body>
 
 </html>

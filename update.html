@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--link javascript code for map-->
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/qgis2web.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <script type="text/javascript" src="scripts.js"></script>
+
+
+    <meta name="description" content="update" />
+    <meta name="keywords" content="update" />
+    <title>Update | Briançon Fantômes</title>
+
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar sticky-top navbar-dark navbar-expand-lg py-0">
+        <a href="" class="navbar-brand">
+            <img src="logo/logoskull.png" alt="briancon fantomes logo" id="logo-navbar">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav">
+
+                <li class="nav-flag">
+                    <a href="index.html" class="nav-link"><img src="photos/frenchFlag.jpg" class="flag"
+                            alt="french flag"></a>
+                </li>
+                <li class="nav-flag">
+                    <a href="update.html" class="nav-link"><img src="photos/englishFlag.jpg" class="flag"
+                            alt="english flag"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <div class="row justify-content-center old-paper">
+                    <img src="photos/photoByAaronBurdenOnUnsplash2.jpg" alt="smartphone and book and headset"
+                        class="img-fluid">
+                    <div class="overlay">
+                        <img src="photos/black_frame.png" alt="black border">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <div class="row justify-content-center old-paper">
+                    <img src="photos/city2.png" alt="briancon" class="img-fluid">
+                    <div class="overlay">
+                        <img src="photos/black_frame.png" alt="black border">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="row justify-content-center old-paper">
+                    <img src="photos/briancon.jpg" alt="Briancon entrance" class="img-fluid">
+                    <div class="overlay">
+                        <img src="photos/black_frame.png" alt="black border">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="what"></div>
+    <div class="container">
+        <h1>Update</h1>
+        <!-- <h1>AUDIO THEATRE EXPERIENCE</h1> -->
+        <p>
+            Briançon Fantômes will be closed for April 3 for updating.
+        </p>
+    </div>
+
+
+
+    <div class="container" id="social">
+        <!-- <h2>SOCIAL MEDIA</h2> -->
+        <a href="https://www.tripadvisor.com/Attraction_Review-g219218-d21176245-Reviews-Les_Fantomes_de_Briancon-Briancon_Hautes_Alpes_Provence_Alpes_Cote_d_Azur.html"
+            target="_blank"><img src="photos/tripadvisor.png" alt="tripadvisor link"></a>
+
+        <a href="https://www.facebook.com/BrianconFantomes" target="_blank"><img src="photos/facebook.png"
+                alt="facebook link"></a>
+        <a href="https://www.instagram.com/brianconfantomes" target="_blank"><img src="photos/instaLogo.png"
+                alt="instagram link"></a>
+    </div>
+
+    <footer>
+        <div class="col-lg-4 text-center px-5">
+            <a href="home.html">Home</a>
+        </div>
+        <div class="col-lg-4 text-center px-5">
+            <a href="mailhandler.php">Contact</a>
+        </div>
+        <div class="col-lg-4 text-center px-5">
+            <a href="https://kaylerobson.com" target="_blank">About</a>
+        </div>
+        <div id="copy">© 2020 Briançon Fantômes. All Rights Reserved.</div>
+    </footer>
+
+
+    <!--jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

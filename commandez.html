@@ -15,10 +15,37 @@
 </head>
 
 <body>
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-lg py-0 fixed-top">
+    <nav id="mainNavbar" class="navbar sticky-top navbar-dark navbar-expand-lg py-0">
         <a href="index.html" class="navbar-brand">
-            <img src="logo/logoskull.png" alt="" id="logo-navbar">
+            <img src="logo/logoskull.png" alt="briancon fantomes logo" id="logo-navbar">
         </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav">
+                    <a href="#what" class="nav-link">QUOI</a>
+                </li>
+                <li class="nav">
+                    <a href="laRoute.html" class="nav-link">OÙ</a>
+                </li>
+                <li class="nav">
+                    <a href="#cost" class="nav-link">PRIX</a>
+                </li>
+                <li class="nav">
+                    <a href="#terms" class="nav-link">CONDITIONS</a>
+                </li>
+                <li class="nav-flag">
+                    <a href="index.html" class="nav-link"><img src="photos/frenchFlag.jpg" class="flag"
+                            alt="french flag"></a>
+                </li>
+                <li class="nav-flag">
+                    <a href="home.html" class="nav-link"><img src="photos/englishFlag.jpg" class="flag"
+                            alt="english flag"></a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <script
@@ -27,7 +54,7 @@
 
     <div class="soon-container">
         <h1>COMMANDEZ</h1>
-        <p>Achetez l'expérience audio théâtrale pour 3,50€.</p>
+        <p>Achetez balade auditive pour 3,50€/personne.</p>
         <div class="container" id="smart-button-container">
             <div style="text-align: center;">
                 <div id="paypal-button-container"></div>
@@ -40,21 +67,18 @@
             <div class="col-sm-6" id="cost">
                 <div class="row justify-content-center" id="cost">
                     <h2>PRIX</h2>
-                    <p>
-                        Achetez l'expérience audio théâtrale qui comprend: chapitres audio, carte routière, photos
-                        et
-                        les noms de rues (pour identifier les arrêts) sont inclus dans l’URL audio pour 3,50€.
+                    <p>3,50€/personne
                     </p>
                     <p>
-                        **Nous vous conseillons d'ouvrir l'URL audio dans un navigateur Chrome pour Android ou dans
-                        Safari pour Apple.** </p>
+                        Vous aurez besoin d'un smartphone, d'un casque et
+                        Internet/Data. Vous Pou </p>
                     <p>
                         Si vous avez des problèmes, envoyez-nous un <a href="mailhandler.php">email</a>.
                     </p>
                     <p>
                         Nous sommes une nouvelle entreprise et nous nous sommes engagés dans un système manuel. Une fois
                         que votre commande a été passée, elle
-                        peut prendre jusqu’à 12 heures pour recevoir l’audio. Vous aurez accès au site d’URL audio pour
+                        peut prendre jusqu’à 24 heures pour recevoir l’audio. Vous aurez accès au site d’URL audio pour
                         7 jours.
                     </p>
                 </div>
@@ -63,13 +87,14 @@
                 <div class="row justify-content-center" id="terms">
                     <h2>CONDITIONS D'ACHAT</h2>
                     <p>
-                        En achetant cette expérience audio théâtrale, vous acceptez de ne pas partager
+                        En achetant cette balade auditive, vous acceptez de ne pas partager
                         cette propriété intellectuelle. Tous les achats sont définitifs.
                     </p>
                 </div>
             </div>
         </div>
-
+        <br>
+        <br>
 
         <footer class="container-fluid px-0">
             <div class="col-lg-4 text-center px-5">
@@ -83,6 +108,7 @@
             </div>
             <div id="copy">© 2020 Briançon Fantômes. All Rights Reserved.</div>
         </footer>
+
         <!-- Add the checkout buttons, set up the order and approve the order -->
         <script
             src="https://www.paypal.com/sdk/js?client-id=AZIox7mb3qSRvGQA7hcROalz6r0RSeGH21U8Eo_Wx_taHMw__D1t8v24z98klxrryqZOdoTit5VTArzD&enable-funding=venmo&currency=EUR"
@@ -100,7 +126,7 @@
 
                     createOrder: function (data, actions) {
                         return actions.order.create({
-                            purchase_units: [{ "description": "Français Expérience Audio Théâtrale", "amount": { "currency_code": "EUR", "value": 3.5 } }]
+                            purchase_units: [{ "description": "Français Balade Auditive", "amount": { "currency_code": "EUR", "value": 3.5 } }]
                         });
                     },
 
@@ -134,6 +160,14 @@
                     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
                 });
             });
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHF6SBW7WQ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-MHF6SBW7WQ');
         </script>
 </body>
 

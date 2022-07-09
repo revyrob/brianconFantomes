@@ -10,3 +10,10 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 RewriteCond %{HTTP_HOST} ^www\.brianconfantomes\.com$
 RewriteRule ^/?$ "http\:\/\/brianconfantomes\.com\/" [R=301,L]
+
+#Always use https for secure connection
+#Replace 'www.brianconbriancon.com' with your domain name
+#(as it appears on your SSL certificate)
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://brianconfantomes.com/$1 [R=301,L]

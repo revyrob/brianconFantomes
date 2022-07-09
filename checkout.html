@@ -15,15 +15,46 @@
 </head>
 
 <body>
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-lg py-0 fixed-top">
+    <nav id="mainNavbar" class="navbar sticky-top navbar-dark navbar-expand-lg py-0">
         <a href="home.html" class="navbar-brand">
-            <img src="logo/logoskull.png" alt="" id="logo-navbar">
+            <img src="logo/logoskull.png" alt="briancon fantomes logo" id="logo-navbar">
         </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav">
+                    <a href="#what" class="nav-link">WHAT</a>
+                </li>
+                <li class="nav">
+                    <a href="theRoute.html" class="nav-link">WHERE</a>
+                </li>
+                <li class="nav">
+                    <a href="#cost" class="nav-link">COST</a>
+                </li>
+                <li class="nav">
+                    <a href="#terms" class="nav-link">TERMS</a>
+                </li>
+                <li class="nav-flag">
+                    <a href="index.html" class="nav-link"><img src="photos/frenchFlag.jpg" class="flag"
+                            alt="french flag"></a>
+                </li>
+                <li class="nav-flag">
+                    <a href="home.html" class="nav-link"><img src="photos/englishFlag.jpg" class="flag"
+                            alt="english flag"></a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AfkRUYAlHFSyi637UcGEgicUzwv3kDYLxbKsc28zxrkZjT93kSPwS9B63esgGz4QocZJnJWrENnbFskM"> // Replace YOUR_CLIENT_ID with your sandbox client ID
+        </script>
 
     <div class="soon-container">
         <h1>CHECK-OUT</h1>
-        <p>Purchase of audio theatre experience for €3.50</p>
+        <p>Purchase of audio walk for €3.50/person</p>
         <div class="container" id="smart-button-container">
             <div style="text-align: center;">
                 <div id="paypal-button-container"></div>
@@ -37,18 +68,18 @@
                 <div class="row justify-content-center" id="cost">
                     <h2>COST</h2>
                     <p>
-                        Purchase of audio theatre experience which includes: audio chapters, route map, photos and
-                        street names (to identify stops) are included in the audio URL for €3.50
+                        €3.50/percon
                     </p>
                     <p>
-                        **We advise to open the audio URL in a Chrome Browser for Android or in Safari for Apple.**
+                        You will need a smartphone, headphones, and Data/Internet to access the URL in the old town.
+                        You can download the audio onto your phone so avoid poor internet connection.
                     </p>
                     <p>
                         If you have any problems <a href="mailhandler.php">email</a> us.
                     </p>
                     <p>
                         We are a new company and have committed to a manual system. Once your order has been placed it
-                        can take up to 12 hours to receive the audio. You will have access to the audio URL site for 7
+                        can take up to 24 hours to receive the audio. You will have access to the audio URL site for 7
                         days.
                     </p>
                 </div>
@@ -57,12 +88,14 @@
                 <div class="row justify-content-center" id="terms">
                     <h2>TERMS OF PURCHASE</h2>
                     <p>
-                        By purchasing this audio theatre experience you agree not to share
+                        By purchasing this audio walk you agree not to share
                         the audio. All purchases are final.
                     </p>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
 
         <footer class="container-fluid px-0">
             <div class="col-lg-4 text-center px-5">
@@ -78,7 +111,11 @@
         </footer>
 
         <!-- Add the checkout buttons, set up the order and approve the order -->
-
+        <div id="smart-button-container">
+            <div style="text-align: center;">
+                <div id="paypal-button-container"></div>
+            </div>
+        </div>
         <script
             src="https://www.paypal.com/sdk/js?client-id=AZIox7mb3qSRvGQA7hcROalz6r0RSeGH21U8Eo_Wx_taHMw__D1t8v24z98klxrryqZOdoTit5VTArzD&enable-funding=venmo&currency=EUR"
             data-sdk-integration-source="button-factory"></script>
@@ -86,7 +123,7 @@
             function initPayPalButton() {
                 paypal.Buttons({
                     style: {
-                        shape: 'pill',
+                        shape: 'rect',
                         color: 'gold',
                         layout: 'vertical',
                         label: 'paypal',
@@ -95,13 +132,13 @@
 
                     createOrder: function (data, actions) {
                         return actions.order.create({
-                            purchase_units: [{ "description": "English Audio theatre Experience", "amount": { "currency_code": "EUR", "value": 3.5 } }]
+                            purchase_units: [{ "description": "English Audio Walk", "amount": { "currency_code": "EUR", "value": .01 } }]
                         });
                     },
 
                     onApprove: function (data, actions) {
                         return actions.order.capture().then(function (details) {
-                            alert('Transaction completed by ' + details.payer.name.given_name + '! Go to https://www.brianconfantomes.com/theRoute');
+                            alert('Transaction completed by ' + details.payer.name.given_name + '.');
                         });
                     },
 
@@ -130,6 +167,15 @@
                     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
                 });
             });
+        </script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHF6SBW7WQ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-MHF6SBW7WQ');
         </script>
 </body>
 
