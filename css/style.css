@@ -149,7 +149,7 @@ footer {
 }
 
 #social img {
-    height: 100px;
+    height: 20vh;
     padding: 10px;
 }
 
@@ -159,7 +159,7 @@ footer {
 }
 
 .routePhotos {
-    height: 150px;
+    height: 25vh;
 }
 
 .card-container {
@@ -269,11 +269,3 @@ h5 {
     color: #E5383B;
 }
 
-#checkout {
-    margin-top: 50px;
-}
-
-.thanks {
-    margin: 30px;
-
-}
