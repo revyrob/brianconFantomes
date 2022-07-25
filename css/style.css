@@ -291,11 +291,11 @@ footer a:hover {
 }
 
 /* change to 1200px? */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     #logo-navbar {
         height: 40px;
         padding: 5px;
-    }
+    } */
 /* 
     #terms {
         margin-top: 40px;
