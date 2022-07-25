@@ -24,7 +24,7 @@ body {
     background-color: black;
 }
 #logo-navbar {
-    height: 45px;
+    height: 75px;
     padding: 5px;
 }
 .spaceHeader {
@@ -40,8 +40,22 @@ body {
     box-shadow: 2px -2px 3px #F5F3F4;
 
 }
+@media (max-width: 576px) {
+    #logo-navbar {
+        height: 40px;
+        padding: 5px;
+    }
 
-
+    #terms {
+        margin-top: 40px;
+        padding-bottom: 25px;
+    }
+}
+@media (max-width: 376px) {
+    #logo-navbar {
+        height: 45px;
+    }
+}
 .nav-link:hover {
     color: #E5383B;
     font-size: larger;
@@ -123,6 +137,7 @@ body {
 }
 
 .btnContainer a {
+
     bottom: 100px;
     left: 45px;
     outline: 1px solid;
@@ -273,32 +288,4 @@ footer a:hover {
     flex-wrap: wrap;
     text-align: center;
     margin: 10px;
-}
-
-
-/* change to 600px? */
-@media (min-width: 600px) {
-    #logo-navbar {
-        height: 75px;
-    }
-}
-.navbar-toggler {
-    border: 1px solid #E5383B;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-/* change to 1200px? */
-@media (min-width: 1200px) {
-    #logo-navbar {
-        height: 40px;
-        padding: 5px;
-    }
-/* 
-    #terms {
-        margin-top: 40px;
-        padding-bottom: 25px;
-    } */
 }
