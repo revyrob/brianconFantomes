@@ -31,11 +31,12 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/images/logo/ghostFavicon.png" type="image/x-icon">
-    <title>The Secret Route | Briançon Fantômes</title>
+    <title>Audio Tour English | Briançon Fantômes</title>
 </head>
 
 <body>
-    <nav id="mainNavbar" class="navbar sticky-top navbar-dark navbar-expand-lg py-0">
+    <header>
+    <nav id="mainNavbar" class="navbar sticky-top navbar-expand-lg py-0">
         <a href="home.html" class="navbar-brand">
             <img src="../assets/images/logo/logoskull.png" alt="briancon fantomes logo" id="logo-navbar">
         </a>
@@ -45,13 +46,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navLinks">
             <ul class="navbar-nav">
                 <li class="nav">
-                    <a href="home.html#what" class="nav-link">WHAT</a>
-                </li>
-                <li class="nav">
-                    <a href="theRoute.html" class="nav-link">WHERE</a>
-                </li>
-                <li class="nav">
-                    <a href="RouteEng.html" class="nav-link">AUDIO</a>
+                    <a href="./home.html" class="nav-link">HOME</a>
                 </li>
                 <li class="nav-flag">
                     <a href="../index.html" class="nav-link"><img src="../assets/images/photos/frenchFlag.jpg" class="flag"
@@ -64,9 +59,10 @@
             </ul>
         </div>
     </nav>
+</header>
 
-    <div>
-        <div class="container">
+    <main>
+        <section class="container">
             <h1>THE ROUTE</h1>
             <p>The Audio Walk consists of 9 chapters. There are
                 photos and street names for each chapter stop.
@@ -74,19 +70,10 @@
                 afternoon or evening
                 because the atmosphere of the old town is envoking and mysterious.
                 <!-- added-->
+        </section>
+  
 
-                The map shows you the route and you can zoom in and out to help locate the stop.
-                WiFi is required.
-                <!-- end of added-->
-            </p>
-            <div class="map">
-                <div id="map">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
+    <section class="container">
         <div>
             <h2>CHAPTERS</h2>
             <p>The audio is set-up in 9 Chapters corresponding with each stop. </p>
@@ -179,9 +166,20 @@
             </div>
         </div>
         <br>
-    </div>
+    </section>
 
-    <!-- <div class="container">
+    <section class="container">
+        The map shows you the route and you can zoom in and out to help locate the stop.
+                WiFi is required.
+                <!-- end of added-->
+            </p>
+            <div class="map">
+                <div id="map">
+                </div>
+            </div>
+    </section>
+
+    <section class="container">
         <div class="credits">
             <div class="title-credits">
                 <h2>CREDITS</h2>
@@ -207,22 +205,12 @@
             <h3>Writer/Producer/Web Developer</h3>
             <p><a href="https://kaylerobson.com" target="_blank">Kayle Robson</a></p>
             <br>
-            
+            <!-- <h3>Voice</h3>
+            <p><a href="">Erwann</a></p> -->
         </div>
-    </div> -->
-    <br>
-    <footer>
-        <div class="col-lg-4 text-center px-5">
-            <a href="home.html">Home</a>
-        </div>
-        <div class="col-lg-4 text-center px-5">
-            <a href="mailhandler.php">Contact</a>
-        </div>
-        <div class="col-lg-4 text-center px-5">
-            <a href="https://kaylerobson.com" target="_blank">About</a>
-        </div>
-        <div id="copy">© 2020 Briançon Fantômes. All Rights Reserved.</div>
-    </footer>
+    </section>
+</main>
+    
 
     <script src="js/qgis2web_expressions.js"></script>
     <script src="js/leaflet.js"></script>
